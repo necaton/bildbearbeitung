@@ -1,0 +1,222 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #303030;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#wrapper {
+	width: 100%;
+	text-align: left;
+	background-color: #303030;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+}
+
+#headline {
+	text-align: center;
+}
+
+input {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+p {
+	font-size: 14px;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+#size_x, #size_y {
+	width: 50px;
+}
+
+canvas {
+	background-color: #5c5c5c;
+}
+
+#downloadCanvas {
+	position: absolute;
+	display: none;
+	z-index: 1;
+}
+
+#imageCanvas {
+	margin-left: 10px;
+}
+
+#menubar {
+	height: 80px;
+	margin: 10px 10px;
+}
+
+.menu {
+	display: inline-block;
+	border: 0px solid black;
+	text-align: center;
+	background-color: #5c5c5c;
+	margin-right: 10px;
+	height: 80px;
+	padding: 0px 5px;
+	vertical-align: top;
+}
+
+#coords1, #coords2 {
+	display: inline-block;
+}
+
+#menu1 .subitem_wrapper {
+	margin-top: 10px;
+}
+
+#menu1 .subitem2 {
+	margin: 0px 5px;
+}
+
+#menu2 .subitem2 {
+	margin: 0px 5px;
+}
+
+#menu3 .subitem2 {
+	margin: 0px 5px;
+}
+
+h2 {
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+}
+
+#imageLoader {
+	display: none;
+}
+
+.button_design {
+	border: 1px solid black;
+	box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.72);
+	color: black;
+	background-color: #454545;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 3px;
+	margin: 0px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.button_design:hover {
+	background-color: #5c5c5c;
+}
+
+#coords2 input {
+	background-color: #454545;
+	border: 2px solid #303030;
+}
+
+input:focus, .button_design:focus {
+	outline: none;
+}
+
+.subitem_wrapper {
+	display: flex;
+}
+
+input[type=range] {
+	-webkit-appearance: none;
+	width: 100%;
+	background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border: 1px solid #000000;
+	height: 15px;
+	width: 6px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+	margin-top: -9px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus {
+	outline: none;
+}
+
+input[type=range]::-ms-track {
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 6px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background-color: black;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background-color: black;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background-color: black;
+}
+
+#vorschaulabel {
+	background-color: ffffff;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#vorschaulabel input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 7px;
+  left: 22px;
+  height: 15px;
+  width: 15px;
+  background-color: #555;
+}
+
+#vorschaulabel:hover input ~ .checkmark {
+	background-color: #aaa;
+}
+
+#vorschaulabel input:checked ~ .checkmark {
+	background-color: #ccc;
+}
